@@ -2,10 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "SuperCell Magic";
+    src:url("supercell-magic.ttf") format("truetype");
     text-decoration: none;
     list-style: none;
 }
+@font-face {
+    font-family: "SuperCell Magic";
+    src: url("/assets/font/Supercell-Magic\ Regular.ttf") format("truetype");
+  }
 
 header {
     position: fixed;
@@ -18,6 +23,15 @@ header {
     justify-content: space-between;
     padding: 33px 9%;
     background: transparent;
+}
+.separator {
+    position: absolute;
+    bottom: -3px; /* Adjust this value to position the line as needed */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    z-index: 1;
 }
 
 .logo {
@@ -33,10 +47,11 @@ header {
 .navlist a {
     color: white;
     margin-left: 60px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
+    font-family: 'SuperCell Magic';
 }
 
 .navlist a:hover {
@@ -55,7 +70,8 @@ header {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    background-color: #ffc857;
+background-image: linear-gradient(316deg, #ffc857 0%, #3e2f5b 74%);
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,18 +85,19 @@ section {
 }
 
 .hero-text h5 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: white;
     margin-bottom: 40px;
 }
 
 .hero-text h1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 90px;
+    font-family: 'SuperCell Magic', cursive;
+    font-size: 70px;
     line-height: 1;
     color: white;
     margin: 0 0 45px;
+    padding-top: 55px;
 }
 
 .hero-text h4 {
@@ -106,8 +123,9 @@ section {
 .hero-text a {
     display: inline-block;
     color: white;
-    background: #4d9559;
-    border: 1px solid transparent;
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+        border: 1px solid transparent;
     padding: 12px 30px;
     line-height: 1.4;
     font-size: 14px;
@@ -133,6 +151,25 @@ section {
     vertical-align: middle;
     margin-right: 5px;
 }
+.w3l-index3 {
+    height: 100%;
+    min-height: 100vh;
+    background-color: #3e2f5b;
+    background-image: linear-gradient(316deg, #ffc857 0%, #3e2f5b 74%);
+    color: #ffffff; /* Text color */
+    padding: 100px 0; /* Adjust padding as needed */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+.radius-image {
+    border-radius: 50%; /* Make image round */
+}
+
+
+
 
 .icons {
     position: absolute;
@@ -151,8 +188,9 @@ section {
 }
 
 .icons i:hover {
-    color: #4d9559;
-    transform: translateY(-5px);
+    background-color: #310e68;
+    background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+        transform: translateY(-5px);
 }
 
 .scroll-down {
@@ -166,7 +204,8 @@ section {
     padding: 12px;
     font-size: 25px;
     color: white;
-    background: #4d9559;
+    background-color: #310e68;
+background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
     border-radius: 30px;
     transition: all .50s ease;
 }
@@ -260,7 +299,8 @@ section {
         right: -100%;
         width: 300px;
         height: 40vh;
-        background: #4d9559;
+        background-color: #310e68;
+background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
         display: flex;
         align-items: center;
         flex-direction: column;
